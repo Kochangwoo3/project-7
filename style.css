@@ -1,0 +1,260 @@
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+
+/* Common CSS */
+.container {
+  background-color: #fff;
+}
+section {
+  padding-top: 50px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: 0.5s;
+}
+.navi {
+  width: 1300px;
+  margin: auto;
+  overflow: hidden;
+  height: 100px;
+  line-height: 100px;
+}
+.lnb {
+  color: #fff;
+  float: left;
+}
+.gnb {
+  float: right;
+}
+.lnb img {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.lnb span {
+  margin-left: 50px;
+  cursor: pointer;
+}
+.gnb a {
+  color: #fff;
+  margin-left: 15px;
+  padding-bottom: 5px;
+  transition: 0.5s;
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+}
+.gnb a:hover {
+  color: #000;
+}
+
+/* Trigger */
+.trigger {
+  padding: 7px 15px;
+  border-radius: 5px;
+  color: rgb(214, 214, 214);
+  transition: 0.5s;
+}
+.trigger:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Section Common CSS */
+.welcome {
+  height: 600px;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  position: relative;
+}
+.section-inner {
+  width: 1300px;
+  margin: auto;
+}
+.section-inner h1 {
+  font-size: 3em;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.section-inner h1 span {
+  color: tomato;
+}
+.section-inner h1:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 15px;
+  background-color: gold;
+  z-index: -1;
+}
+.section-inner p {
+  font-size: 1.6em;
+  line-height: 1.8em;
+  text-align: justify;
+}
+.section-inner p span {
+  background-color: #000;
+  color: #fff;
+}
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.heading h1 {
+  font-size: 3em;
+}
+.heading p {
+  font-size: 1.7em;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  color: #777;
+  font-family: 'PT Sans', sans-serif;
+}
+.footer-inner {
+  width: 1300px;
+  margin: auto;
+  overflow: hidden;
+  padding: 30px;
+}
+.footer-inner div {
+  float: left;
+}
+.footer-inner div:nth-child(1) {
+  width: 20%;
+}
+.footer-inner div:nth-child(2) {
+  width: 20%;
+}
+.footer-inner div:nth-child(3) {
+  width: 60%;
+}
+.footer-inner div a {
+  display: block;
+  color: #777;
+}
+.footer-inner div a:hover {
+  text-decoration: underline;
+}
+.footer-inner div b {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+.btn-donate {
+  background-color: #fff;
+  font-size: 1em;
+  padding: 10px 15px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-donate:hover {
+  opacity: 0.8;
+}
+.footer-inner div:nth-child(3) p {
+  padding: 0 100px;
+}
+
+/* Fixed Footer Reveal */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+#city4 {
+  margin-bottom: 250px;
+}
+/* Image Hover */
+.image-frame {
+  overflow: hidden;
+  border-radius: 50px 5px 50px 10px;
+}
+.image-frame img {
+  transition: 0.7s;
+  width: 100%;
+}
+.section-inner img:hover {
+  transform: scale(1.05);
+}
+
+/* Active Class */
+header.active {
+  background-color: #fff;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+header.active .navi {
+  line-height: 70px;
+}
+header.active .trigger {
+  color: #000;
+}
+header.active .gnb a {
+  color: #000;
+}
+header.active .trigger:hover {
+  background-color: #f4f4f4;
+}
+header.active .lnb img {
+  transform: scale(0.8);
+}
+
+/* Go to top */
+.gototop {
+  position: fixed;
+  right: 20px;
+  bottom: -20px;
+  transition: 0.5s;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.5em;
+  cursor: pointer;
+  background: linear-gradient(45deg, #a1c4fd, #c2e9fb);
+  color: #fff;
+}
+.gototop.active {
+  bottom: 20px;
+  opacity: 1;
+}
